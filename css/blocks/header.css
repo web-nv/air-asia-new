@@ -1,0 +1,57 @@
+.header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 82px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list > * + * {
+  margin-left: 57px;
+}
+
+.nav__link {
+  font-size: 14px;
+  line-height: 1.42;
+  transition: all 0.3s;
+}
+
+.nav__link:hover {
+  color: #da0100;
+}
+
+.nav__item--active .nav__link {
+  color: #da0100;
+}
+
+.contacts {
+  text-align: right;
+}
+
+.contacts__phone {
+  font-size: 26px;
+  line-height: 1.1;
+  transition: all 0.3s;
+}
+
+.contacts__workhours {
+  display: block;
+  font-size: 13px;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+  text-decoration-line: underline;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contacts__phone:hover,
+.contacts__workhours:hover {
+  color: #da0100;
+}

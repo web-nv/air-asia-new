@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans-regular.woff2") format("woff2")
+    url("../../fonts/opensans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans-bold.woff2") format("woff2")
+    url("../../fonts/opensans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #001821;
+  color: #fff;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1140px;
+}
+
+.wrapper__content {
+  flex: 1;
+}
+
+.wrapper__content--home-page {
+  background: url("../../img/home-page/header/header-bg.png") center top
+      no-repeat,
+    url("../../img/home-page/about/about-bg.png") center bottom no-repeat;
+}
+
+.button {
+  width: fit-content;
+  display: inline-block;
+  padding: 18px 40px;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f5170e;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.button:hover {
+  background-color: #da0100;
+}
+
+.button--light {
+  padding: 17px 30px;
+  background-color: transparent;
+  color: #f5170e;
+  border: 1px solid #f5170e;
+}
+
+.button--light:hover {
+  background-color: #da0100;
+  color: #fff;
+  border: 1px solid #da0100;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 52px;
+  letter-spacing: 1.8px;
+}
+
+.title--fire {
+  position: relative;
+}
+
+.title--fire::after {
+  content: "";
+  background: url("../../img/home-page/icons/flame.svg") no-repeat;
+  margin-left: 12px;
+  width: 21px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.title--dark {
+  color: #000;
+  margin-bottom: 43px;
+}
+
+.col-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

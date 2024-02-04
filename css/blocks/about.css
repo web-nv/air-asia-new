@@ -1,0 +1,42 @@
+.about {
+  padding: 145px 0 53px;
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__container::before {
+  content: "";
+  display: block;
+  width: 490px;
+  height: 505px;
+  background: url("../../img/home-page/about/about-1.jpg") center center / cover
+    no-repeat;
+  border-radius: 5px;
+}
+
+.about__description {
+  max-width: 785px;
+  min-height: 455px;
+  padding: 74px 80px 66px;
+  margin-left: -136px;
+  margin-top: 97px;
+  background: url("../../img/home-page/about/about-2.jpg") center top no-repeat;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about__text {
+  margin-bottom: 68px;
+  color: #060606;
+  line-height: 1.68;
+}
+
+.about__text p {
+  margin-bottom: 20px;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}

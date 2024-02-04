@@ -1,0 +1,141 @@
+.top-line {
+  min-height: 412px;
+  display: flex;
+  flex-direction: column;
+  background: url("../../img/reviews-page/top-line-bg.jpg") right 50% top
+    no-repeat;
+}
+
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.page-title {
+  font-size: 72px;
+  margin-bottom: 0;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  color: #9a9a9a;
+  margin-left: 6px;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: #9a9a9a;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.posts {
+  padding: 95px 0 84px;
+  background-color: #fff;
+}
+
+.posts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  margin-bottom: 67px;
+}
+
+.posts__item {
+  display: flex;
+  column-gap: 56px;
+}
+
+.posts__img {
+  min-width: 460px;
+}
+
+.posts__desc {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.title__posts {
+  margin-bottom: 28px;
+  color: #000;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.posts__text p {
+  margin-bottom: 37px;
+  color: #303030;
+  line-height: 1.7;
+}
+
+.button--light-services {
+  padding: 19px 40px;
+}
+
+.partners {
+  background: #fff;
+  padding: 95px 0 112px;
+  color: #000;
+}
+
+.partners--bg-grey {
+  background: #f4f5f5;
+}
+
+.partners__title {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  margin-bottom: 85px;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners__wrapper > * + * {
+  margin-top: 73px;
+}
+
+.partners__item {
+  transition: all 0.3s;
+}
+
+.partners__link {
+  display: inline-block;
+  filter: grayscale(100%);
+}
+
+.partners__link:hover {
+  filter: grayscale(0);
+}
+
+.footer__container--inner {
+  padding: 48px 0 42px;
+  border-top: none;
+}
