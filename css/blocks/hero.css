@@ -18,7 +18,7 @@
   letter-spacing: 1.8px;
 }
 
-.hero__subtitle p {
+.hero__subtitle {
   margin-bottom: 33px;
-  letter-spacing: 1.4px;
+  font-size: 18px;
 }

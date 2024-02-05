@@ -28,15 +28,8 @@
 }
 
 .about__text {
+  max-width: 80%;
   margin-bottom: 68px;
   color: #060606;
   line-height: 1.68;
-}
-
-.about__text p {
-  margin-bottom: 20px;
-}
-
-.about__text p:last-child {
-  margin-bottom: 0;
 }

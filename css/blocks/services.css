@@ -85,7 +85,7 @@
   letter-spacing: 1px;
 }
 
-.posts__text p {
+.posts__text {
   margin-bottom: 37px;
   color: #303030;
   line-height: 1.7;
