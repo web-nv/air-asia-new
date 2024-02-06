@@ -14,8 +14,8 @@
   font-style: normal;
 }
 
-body,
-html {
+html,
+body {
   height: 100%;
 }
 
@@ -79,14 +79,10 @@ address {
 
 .wrapper {
   overflow: hidden;
+  min-width: 1200px;
   min-height: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper__content {
@@ -97,6 +93,13 @@ address {
   background: url("../../img/home-page/header/header-bg.png") center top
       no-repeat,
     url("../../img/home-page/about/about-bg.png") center bottom no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1140px;
 }
 
 .button {
