@@ -13,8 +13,8 @@
 .reviews__list {
   width: 100%;
 }
+
 .reviews__item {
-  /* width: calc(50% - 13px); */
   width: 557px;
   min-height: 542px;
   background-color: #f4f5f5;
@@ -30,12 +30,10 @@
   align-items: center;
   margin-bottom: 27px;
 }
+
 .reviews__img {
   margin-right: 22px;
 }
-
-/* .reviews__info {
-} */
 
 .reviews__username {
   font-weight: bold;
@@ -52,7 +50,8 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../../img/reviews-page/vk-blue.svg");
+  background: url("../../img/reviews-page/vk-blue.svg") center top / cover
+    no-repeat;
   vertical-align: middle;
   margin-left: 7px;
 }
@@ -80,7 +79,6 @@
   font-size: 30px;
   line-height: 1.4;
   color: #1a1b1e;
-  letter-spacing: normal;
 }
 
 .reviews__text {
@@ -89,8 +87,137 @@
 }
 
 .reviews__date {
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   line-height: 2;
   color: #1a1b1e;
+}
+
+.slogan {
+  background: url("../../img/reviews-page/cta.jpg") center top / cover no-repeat
+    #f5ae98;
+}
+
+.slogan__title {
+  max-width: 50%;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  padding: 117px 0;
+  margin-bottom: 0;
+}
+
+.cta {
+  padding: 62px 96px;
+  background-color: #f4f5f5;
+  color: #1a1b1e;
+}
+
+.cta__title {
+  margin-bottom: 57px;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 28px;
+  margin-bottom: 26px;
+}
+
+.form__input-item {
+  width: 50%;
+  min-height: 65px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  color: #1a1b1e;
+}
+
+.form__input-item:active,
+.form__input-item:focus {
+  outline: 1px solid #f5170e;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 235px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 23px;
+  font-size: 18px;
+  color: #1a1b1e;
+}
+
+.form__input-item::placeholder,
+.form__input-item::placeholder {
+  color: #666;
+}
+
+.form__textarea:active,
+.form__textarea:focus {
+  outline: 1px solid #f5170e;
+}
+
+.form__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 78px;
+  margin-bottom: 16px;
+}
+
+.form__text {
+  font-size: 18px;
+  color: #1a1b1e;
+}
+
+.form__tours {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex: 1;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.form__label {
+  display: flex;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.form__checkbox-desc {
+  padding: 10px 19px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 35px;
+  color: #303030;
+  background: #e7e7e7;
+}
+
+.form__checkbox:checked + .form__checkbox-desc {
+  background: #b9eae4;
+}
+
+.form__checkbox-desc:hover {
+  background: #b9eae4;
+}
+
+.form__button {
+  padding: 18px 45px;
+}
+
+.form__button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 17px;
 }
