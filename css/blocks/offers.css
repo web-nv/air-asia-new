@@ -39,7 +39,7 @@
 .offers__features {
   display: flex;
   align-items: center;
-  column-gap: 28px;
+  column-gap: 25px;
   margin-bottom: 25px;
 }
 

@@ -5,55 +5,59 @@
 }
 
 .reviews__list-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 71px;
+  margin-bottom: 62px;
 }
 
 .reviews__list {
-  width: 100%;
+  column-count: 2;
+  column-gap: 26px;
 }
 
 .reviews__item {
-  width: 557px;
+  display: inline-flex;
+  flex-direction: column;
   min-height: 542px;
   background-color: #f4f5f5;
-  padding: 50px 28px 32px;
+  padding: 50px 30px 30px;
+  border-radius: 5px;
 }
 
-.reviews__list > * + * {
-  margin-top: 17px;
+.reviews__item {
+  margin-bottom: 17px;
+}
+
+.reviews__item:last-child {
+  margin-bottom: 0;
 }
 
 .reviews__header {
   display: flex;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
-.reviews__img {
+.reviews__avatar {
   margin-right: 22px;
 }
 
 .reviews__username {
-  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
   font-size: 24px;
+  font-weight: bold;
   line-height: 1.8;
   color: #1a1b1e;
-  margin-bottom: 5px;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .reviews__username::after {
-  content: "";
+  content: url("../../img/reviews-page/vk-blue.svg");
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../../img/reviews-page/vk-blue.svg") center top / cover
-    no-repeat;
   vertical-align: middle;
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 .reviews__username:hover {
@@ -62,11 +66,13 @@
 }
 
 .reviews__location {
+  display: inline-block;
   font-size: 13px;
   color: #303030;
   background: #b9eae4;
   border-radius: 35px;
   padding: 10px 18px;
+  cursor: pointer;
 }
 
 .reviews__description {
@@ -75,15 +81,19 @@
 }
 
 .reviews__title {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   font-size: 30px;
   line-height: 1.4;
   color: #1a1b1e;
 }
 
+.reviews__title--two-lines {
+  margin-bottom: 30px;
+}
+
 .reviews__text {
-  margin-bottom: 35px;
-  line-height: 1.8;
+  margin-bottom: 45px;
+  line-height: 1.6;
 }
 
 .reviews__date {
@@ -94,27 +104,41 @@
 }
 
 .slogan {
-  background: url("../../img/reviews-page/cta.jpg") center top / cover no-repeat
-    #f5ae98;
+  background: url("../../img/reviews-page/slogan-bg.png") center center / cover
+    no-repeat #f5ae98;
+}
+
+.slogan__container {
+  position: relative;
+  padding: 120px 0;
+}
+
+.slogan__container::after {
+  content: url("../../img/reviews-page/slogan.png");
+  max-height: 341px;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
 }
 
 .slogan__title {
+  margin-bottom: 0;
   max-width: 50%;
   font-size: 48px;
   font-weight: bold;
+  line-height: 1.5;
   color: #fff;
-  padding: 117px 0;
-  margin-bottom: 0;
 }
 
 .cta {
-  padding: 62px 96px;
+  padding: 67px 0 100px;
   background-color: #f4f5f5;
   color: #1a1b1e;
 }
 
 .cta__title {
-  margin-bottom: 57px;
+  font-size: 48px;
+  margin-bottom: 62px;
 }
 
 .form__input {
@@ -147,14 +171,14 @@
   outline: none;
   border: none;
   border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 23px;
+  padding: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
   color: #1a1b1e;
 }
 
 .form__input-item::placeholder,
-.form__input-item::placeholder {
+.form__textarea::placeholder {
   color: #666;
 }
 
@@ -166,20 +190,20 @@
 .form__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: middle;
   column-gap: 78px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 
 .form__text {
+  padding-top: 15px;
   font-size: 18px;
   color: #1a1b1e;
 }
 
-.form__tours {
+.form__tours-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
   flex: 1;
   column-gap: 15px;
   row-gap: 10px;
@@ -196,7 +220,7 @@
 }
 
 .form__checkbox-desc {
-  padding: 10px 19px;
+  padding: 10px 14px;
   font-size: 13px;
   cursor: pointer;
   border-radius: 35px;
@@ -204,12 +228,12 @@
   background: #e7e7e7;
 }
 
-.form__checkbox:checked + .form__checkbox-desc {
+.form__checkbox:checked ~ .form__checkbox-desc {
   background: #b9eae4;
 }
 
 .form__checkbox-desc:hover {
-  background: #b9eae4;
+  box-shadow: 1px 1px 3px #666;
 }
 
 .form__button {

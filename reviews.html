@@ -69,11 +69,11 @@
                     <div class="reviews__header">
                       <img
                         src="img/reviews-page/card-1.png"
-                        alt="Иван Петрович"
-                        class="reviews__img"
+                        alt="User"
+                        class="reviews__avatar"
                       />
                       <div class="reviews__info">
-                        <div class="reviews__username">Иван Петрович</div>
+                        <a class="reviews__username">Иван Петрович</a>
                         <span class="reviews__location">Водопад Янг-бей</span>
                       </div>
                     </div>
@@ -96,11 +96,11 @@
                     <div class="reviews__header">
                       <img
                         src="img/reviews-page/card-3.png"
-                        alt="Лиза Сидорова"
-                        class="reviews__img"
+                        alt="User"
+                        class="reviews__avatar"
                       />
                       <div class="reviews__info">
-                        <div class="reviews__username">Лиза Сидорова</div>
+                        <a class="reviews__username">Лиза Сидорова</a>
                         <span class="reviews__location">Тур по Тайланду</span>
                       </div>
                     </div>
@@ -119,24 +119,24 @@
                       <div class="reviews__date">Ноябрь 2019</div>
                     </div>
                   </li>
-                </ul>
-                <ul class="reviews__list">
                   <li class="reviews__item">
                     <div class="reviews__header">
                       <img
                         src="img/reviews-page/card-2.png"
-                        alt="Екатерина Жмых"
-                        class="reviews__img"
+                        alt="User"
+                        class="reviews__avatar"
                       />
                       <div class="reviews__info">
-                        <div class="reviews__username">Екатерина Жмых</div>
+                        <a class="reviews__username">Екатерина Жмых</a>
                         <span class="reviews__location"
                           >Тур на Остров обезьян</span
                         >
                       </div>
                     </div>
                     <div class="reviews__description">
-                      <h3 class="title reviews__title">
+                      <h3
+                        class="title reviews__title reviews__title--two-lines"
+                      >
                         Очень понравился тур на остров обезьян.
                       </h3>
                       <div class="reviews__text">
@@ -158,16 +158,18 @@
                     <div class="reviews__header">
                       <img
                         src="img/reviews-page/card-4.png"
-                        alt="Антон Игоревич"
-                        class="reviews__img"
+                        alt="User"
+                        class="reviews__avatar"
                       />
                       <div class="reviews__info">
-                        <div class="reviews__username">Антон Игоревич</div>
+                        <a class="reviews__username">Антон Игоревич</a>
                         <span class="reviews__location">Тур по Индонезии</span>
                       </div>
                     </div>
                     <div class="reviews__description">
-                      <h3 class="title reviews__title">
+                      <h3
+                        class="title reviews__title reviews__title--two-lines"
+                      >
                         Для первого раза выбрал тур по Индонезии. И не пожалел!
                       </h3>
                       <div class="reviews__text">
@@ -214,9 +216,9 @@
           </section>
 
           <section class="slogan">
-            <div class="container">
+            <div class="container slogan__container">
               <h2 class="title slogan__title">
-                Подберем тур <br />по вашим пожеланиям
+                Подберем тур по вашим пожеланиям
               </h2>
             </div>
           </section>
@@ -228,11 +230,10 @@
               <form class="form">
                 <div class="form__input">
                   <input
-                    autofocus
                     autocomplete="off"
                     type="text"
                     class="form__input-item"
-                    placeholder="Игорь Петрович"
+                    placeholder="ФИО"
                   />
                   <input
                     autocomplete="off"
@@ -244,8 +245,6 @@
 
                 <textarea
                   class="form__textarea"
-                  cols="30"
-                  rows="10"
                   placeholder="Напишите свой честный отзыв ;)"
                 ></textarea>
 
@@ -254,60 +253,62 @@
                     Какими услугами компании пользуетесь?
                   </div>
 
-                  <div class="form__tours">
-                    <label for="tour-01" class="form__label">
-                      <input
-                        type="checkbox"
-                        id="tour-01"
-                        class="form__checkbox"
-                      />
-                      <span class="form__checkbox-desc">Остров обезьян</span>
-                    </label>
-                    <label for="tour-2" class="form__label">
-                      <input
-                        type="checkbox"
-                        id="tour-2"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc">Тур по Тайланду</span>
-                    </label>
-                    <label for="tour-3" class="form__label">
-                      <input
-                        type="checkbox"
-                        id="tour-3"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc">Водопад Янг-бей</span>
-                    </label>
-                    <label for="tour-4" class="form__label">
-                      <input
-                        type="checkbox"
-                        id="tour-4"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc"
-                        >Тур по Индонезии</span
-                      >
-                    </label>
-                    <label for="no-way" class="form__label"
-                      ><input
-                        type="checkbox"
-                        id="no-way"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc">Никакими</span>
-                    </label>
-                    <label for="tour-5" class="form__label"
-                      ><input
-                        type="checkbox"
-                        id="tour-5"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc">Тур по Бали</span>
-                    </label>
-                    <label for="other" class="form__label"
-                      ><input
-                        type="checkbox"
-                        id="other"
-                        class="form__checkbox"
-                      /><span class="form__checkbox-desc">Другое</span>
-                    </label>
-                  </div>
+                  <ul class="form__tours-list">
+                    <li class="form__tours-item">
+                      <label class="form__label">
+                        <input type="checkbox" class="form__checkbox" />
+                        <span class="form__checkbox-desc">Остров обезьян</span>
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label">
+                        <input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Тур по Тайланду</span
+                        >
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label">
+                        <input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Водопад Янг-бей</span
+                        >
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label">
+                        <input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Тур по Индонезии</span
+                        >
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label"
+                        ><input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Никакими</span
+                        >
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label"
+                        ><input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Тур по Бали</span
+                        >
+                      </label>
+                    </li>
+                    <li class="form__tours-item">
+                      <label class="form__label"
+                        ><input type="checkbox" class="form__checkbox" /><span
+                          class="form__checkbox-desc"
+                          >Другое</span
+                        >
+                      </label>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="form__button-wrap">
@@ -318,7 +319,9 @@
                   >
                     Очистить
                   </button>
-                  <a href="#" class="button" type="button">Отправить</a>
+                  <button href="#" class="button" type="submit">
+                    Отправить
+                  </button>
                 </div>
               </form>
             </div>
