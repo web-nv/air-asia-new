@@ -1,6 +1,6 @@
 @import url(layout/normalize.css);
 @import url(layout/base.css);
-
+@import url(blocks/welcome.css);
 @import url(blocks/hero.css);
 @import url(blocks/header.css);
 @import url(blocks/offers.css);

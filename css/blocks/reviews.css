@@ -123,11 +123,12 @@
 
 .slogan__title {
   margin-bottom: 0;
-  max-width: 50%;
+  max-width: 60%;
   font-size: 48px;
   font-weight: bold;
   line-height: 1.5;
   color: #fff;
+  z-index: 99;
 }
 
 .cta {
