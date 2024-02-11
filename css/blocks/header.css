@@ -32,7 +32,9 @@
 }
 
 .contacts {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
 }
 
@@ -44,50 +46,38 @@
 
 .dropdown {
   position: relative;
+  display: inline-block;
+}
+
+.contacts__phone:hover {
+  color: #da0100;
 }
 
 .dropdown__workhours {
-  display: inline-block;
+  display: block;
   font-size: 13px;
   line-height: 1.1;
   text-decoration-line: underline;
   transition: all 0.3s;
-  cursor: pointer;
-}
-
-.contacts__phone:hover,
-.dropdown__workhours:hover {
-  color: #da0100;
 }
 
 .dropdown__wrapper {
   position: absolute;
   top: 100%;
-  right: -10px;
-  padding: 10px;
-  transition: all 0.3s;
+  right: -9999px;
+  padding: 7px 11px;
   opacity: 0;
-}
-
-.dropdown__workhours::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 12px;
-  width: 100%;
-  height: 30px;
+  transition: opacity 0.3s;
 }
 
 .dropdown__description {
-  width: 156px;
-  height: 68px;
-  background-color: #ededed;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 15px;
+  width: 156px;
+  height: 68px;
+  background-color: #cdd1d2;
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -96,11 +86,11 @@
   content: "";
   width: 15px;
   height: 15px;
-  background-color: #ededed;
+  background-color: #cdd1d2;
   transform: rotate(45deg);
   position: absolute;
   top: 5%;
-  right: 25%;
+  right: 32%;
 }
 
 .dropdown__time {
@@ -116,4 +106,10 @@
 
 .dropdown:hover .dropdown__wrapper {
   opacity: 1;
+  right: -10px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown__workhours {
+  color: #da0100;
 }

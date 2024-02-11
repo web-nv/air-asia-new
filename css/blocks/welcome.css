@@ -11,6 +11,10 @@
     no-repeat;
 }
 
+.welcome__container {
+  margin-top: 157px;
+}
+
 .welcome__logo {
   z-index: 99;
 }
@@ -25,13 +29,13 @@
 .welcome__content::before {
   content: url("../../img/welcome-page/shades.png");
   position: absolute;
-  top: 35%;
+  top: 26%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .welcome__text {
-  margin-bottom: 52px;
+  margin-bottom: 57px;
   font-size: 18px;
   color: #fff;
   z-index: 99;

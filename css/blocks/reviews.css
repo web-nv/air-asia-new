@@ -110,7 +110,8 @@
 
 .slogan__container {
   position: relative;
-  padding: 120px 0;
+  padding-top: 130px;
+  padding-bottom: 110px;
 }
 
 .slogan__container::after {
@@ -206,7 +207,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  column-gap: 15px;
+  column-gap: 13px;
   row-gap: 10px;
 }
 
@@ -221,7 +222,7 @@
 }
 
 .form__checkbox-desc {
-  padding: 10px 14px;
+  padding: 10px 15px;
   font-size: 13px;
   cursor: pointer;
   border-radius: 35px;
