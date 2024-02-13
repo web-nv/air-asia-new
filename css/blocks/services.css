@@ -120,13 +120,10 @@
   margin-top: 73px;
 }
 
-.partners__item {
-  transition: all 0.3s;
-}
-
 .partners__link {
   display: inline-block;
   filter: grayscale(100%);
+  transition: all 0.3s;
 }
 
 .partners__link:hover {
